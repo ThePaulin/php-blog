@@ -1,0 +1,187 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem ;
+
+    background-color: black;
+    height: 50px;
+    color: white;
+    /* border: 1px solid red; */
+}
+.nav-container h1 {
+    
+    margin-left: 0;
+    /* border: 1px solid yellow; */
+    text-align: left;
+    padding-left: 10px ;
+    width: 1000px;
+    text-decoration: none;
+
+    
+
+}
+.navbar{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid purple; */
+    height: inherit;
+    
+}
+
+
+.hidden{
+    visibility: hidden;
+}
+
+.nav-container .hamburger-menu {
+    visibility: hidden;
+}
+
+.hamburger-menu label span{
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    padding-top: 3px;
+    justify-content: center;
+    height: 10px;
+
+}
+.hamburger-menu label span div{
+    display: block;
+    background-color: #fff;
+    width: 30px;
+    height: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar li{
+        visibility: hidden;
+    }
+    .nav-container .hamburger-menu {
+        visibility: visible;
+    }
+    /* #menu:checked ~ .navbar{
+        visibility: visible;
+        flex-direction: column;
+    } */
+    #menu:checked{
+        border: 1px solid #fff;
+    }
+    
+}
+.navbar li{
+    padding: 10px;
+    
+    list-style-type: none;
+    list-style: none;
+}
+.nav-container a{
+    text-decoration: none;
+    color: #fff
+}
+.nav-container a:hover{
+    
+    color: rgb(167, 23, 23);
+}
+.nav-container a:active{
+    
+    color: rgb(167, 23, 23);
+}
+/* .nav-container a[tabindex]:focus{
+    color: rgb(167, 23, 23);
+} */
+
+
+
+/*main-container*/
+
+.main-container{
+    padding: 1rem;
+}
+
+/* featured article*/
+
+.featured-article{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.featured-article img{
+    width: 500px;
+}
+@media screen and (max-width: 530px) {
+    .featured-article img{
+        width: 100%;
+    }
+}
+
+.articles-container{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.articles-container .article{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.articles-container .article .article-img{
+    width: 300px;
+    padding: 1rem;
+   
+}
+
+/*about*/
+
+.about-container .about-section{
+    padding: 1rem;
+    width: 500px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form{
+    padding: 1rem;
+}
+
+footer{
+    padding: 30px 10px 0 10px;
+    background-color: black;
+    height: 50vh;
+    margin-bottom: 0;
+}
+
+/* footer .mailchimp-sub{
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+footer p{
+    color: rgb(220, 210, 210);
+}
